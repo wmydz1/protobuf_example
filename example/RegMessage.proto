@@ -1,0 +1,8 @@
+package example;
+
+message RegMessage {
+    required int32 id = 1; // 主键,唯一
+    required string username = 2; // 帐号
+    required string password = 3; // 密码
+    optional string email = 4; // 邮箱(可选)
+}
