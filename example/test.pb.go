@@ -42,7 +42,7 @@ func (x *FOO) UnmarshalJSON(data []byte) error {
 	*x = FOO(value)
 	return nil
 }
-func (FOO) EnumDescriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (FOO) EnumDescriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 type Test struct {
 	Label            *string             `protobuf:"bytes,1,req,name=label" json:"label,omitempty"`
@@ -55,7 +55,7 @@ type Test struct {
 func (m *Test) Reset()                    { *m = Test{} }
 func (m *Test) String() string            { return proto.CompactTextString(m) }
 func (*Test) ProtoMessage()               {}
-func (*Test) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (*Test) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 const Default_Test_Type int32 = 77
 
@@ -109,7 +109,7 @@ func init() {
 	proto.RegisterEnum("example.FOO", FOO_name, FOO_value)
 }
 
-var fileDescriptor1 = []byte{
+var fileDescriptor2 = []byte{
 	// 178 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0xe2, 0x2a, 0x49, 0x2d, 0x2e,
 	0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x62, 0x4f, 0xad, 0x48, 0xcc, 0x2d, 0xc8, 0x49, 0x55,

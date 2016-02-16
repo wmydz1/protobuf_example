@@ -2,17 +2,6 @@
 // source: RegMessage.proto
 // DO NOT EDIT!
 
-/*
-Package example is a generated protocol buffer package.
-
-It is generated from these files:
-	RegMessage.proto
-	test.proto
-
-It has these top-level messages:
-	RegMessage
-	Test
-*/
 package example
 
 import proto "github.com/golang/protobuf/proto"
@@ -23,10 +12,6 @@ import math "math"
 var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
-
-// This is a compile-time assertion to ensure that this generated file
-// is compatible with the proto package it is being compiled against.
-const _ = proto.ProtoPackageIsVersion1
 
 type RegMessage struct {
 	Id               *int32  `protobuf:"varint,1,req,name=id" json:"id,omitempty"`
@@ -39,7 +24,7 @@ type RegMessage struct {
 func (m *RegMessage) Reset()                    { *m = RegMessage{} }
 func (m *RegMessage) String() string            { return proto.CompactTextString(m) }
 func (*RegMessage) ProtoMessage()               {}
-func (*RegMessage) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{0} }
+func (*RegMessage) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
 
 func (m *RegMessage) GetId() int32 {
 	if m != nil && m.Id != nil {
@@ -73,7 +58,7 @@ func init() {
 	proto.RegisterType((*RegMessage)(nil), "example.RegMessage")
 }
 
-var fileDescriptor0 = []byte{
+var fileDescriptor1 = []byte{
 	// 114 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0x12, 0x08, 0x4a, 0x4d, 0xf7,
 	0x4d, 0x2d, 0x2e, 0x4e, 0x4c, 0x4f, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x62, 0x4f, 0xad,
